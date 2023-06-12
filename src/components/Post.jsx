@@ -17,7 +17,7 @@ export default function App() {
 
   return (
     <div>
-      <div  className="container"><h1 className="heading">{advice}</h1></div>
+      <div  className="container"><h1>{advice}</h1></div>
       <div className="center"><a className="btn" onClick={getAdvice}>Get Advice</a></div>
       <Message count={count}/>
     </div>

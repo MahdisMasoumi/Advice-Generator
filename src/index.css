@@ -24,8 +24,8 @@
   border-radius: 10rem;
   border: none;
   cursor: pointer;
-  color: rgb(134, 127, 127);
-  transition: all .4s;
+  color: rgb(87, 78, 78);
+  transition: all .3s;
 }
 
 .btn:hover{
@@ -35,6 +35,6 @@
 }
 
 .count{
-  color: yellowgreen;
+  color: rgb(132, 139, 116);
   text-align: center;
 }
