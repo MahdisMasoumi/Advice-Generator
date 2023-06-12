@@ -1,29 +1,40 @@
-* {
-  box-sizing: border-box;
-}
-
-:root {
-  min-height: 100vh;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  background-image: radial-gradient(ellipse at top left, #7f50e4, #4c05d0);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
+.App {
+  font-family: sans-serif;
   text-align: center;
-  color: #e6ddf9;
 }
 
-#name {
-  color: rgb(14, 10, 65);
-  font-size: larger;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.container{
+  color: rgb(99, 160, 82);
+  height: 20rem;
+  text-align: center;
+  padding: 1rem 4rem;
+}
+
+.center{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.btn{
+  background-color:rgb(200, 216, 195);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  border: none;
+  cursor: pointer;
+  color: rgb(134, 127, 127);
+  transition: all .4s;
+}
+
+.btn:hover{
+  background-color: rgb(157, 217, 140);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.count{
+  color: yellowgreen;
+  text-align: center;
 }

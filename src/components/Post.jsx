@@ -1,18 +1,31 @@
-const names =['Mahdis', 'Mahdi']
+import { useEffect, useState } from "react";
 
-function Post (){
-    const chosenName= Math.random() > 0.5 ? names[0] : names[1];
-    
-    return (
-        <div>
-            <p id="name">{chosenName}</p>
-            <p>React.js is awesome!</p>
-            <div>
-                <h2>My first Project</h2>
-            </div>
-        </div>
-    )
+export default function App() {
+  const [advice, setAdvice]= useState("");
+  const [count, setCount] = useState(0);
+
+  async function getAdvice(){
+    const res = await fetch("https://api.adviceslip.com/advice");
+    const data = await res.json();
+    setAdvice(data.slip.advice);
+    setCount((c)=> c+1);
+  }
+
+  useEffect(function(){
+    getAdvice();
+  }, []);
+
+  return (
+    <div>
+      <div  className="container"><h1 className="heading">{advice}</h1></div>
+      <div className="center"><a className="btn" onClick={getAdvice}>Get Advice</a></div>
+      <Message count={count}/>
+    </div>
+  );
 }
 
-
-export default Post;
+function Message(props){
+  return(
+    <p className="count">You have read <strong>{props.count}</strong> pieces of advice</p>
+  )
+}
