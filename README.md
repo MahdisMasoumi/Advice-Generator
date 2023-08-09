@@ -1,1 +1,1 @@
-This is a simple web application that generates random advice while displaying the current time and date. By clicking the "Get Advice" button, you will receive a new piece of advice each time. The project is built using React, HTML, and CSS.
+Developed a React application that displays advice retrieved from an API, updates the displayed time in real-time, and keeps track of how many pieces of advice have been read, showcasing asynchronous operations and dynamic UI components.
